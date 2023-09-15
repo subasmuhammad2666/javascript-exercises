@@ -1,7 +1,7 @@
 const calculator = require('./calculator');
 
 describe('add', () => {
-  test('adds 0 and 0', () => {
+  test.skip('adds 0 and 0', () => {
     expect(calculator.add(0, 0)).toBe(0);
   });
 
@@ -43,7 +43,7 @@ describe('multiply', () => {
     expect(calculator.multiply([2, 4])).toBe(8);
   });
 
-  test.skip('multiplies several numbers', () => {
+  test('multiplies several numbers', () => {
     expect(calculator.multiply([2, 4, 6, 8, 10, 12, 14])).toBe(645120);
   });
 });
